@@ -5,6 +5,7 @@ html {
     padding: 0;
     background-color: #24253a;
     color: white;
+    overflow-x: hidden;
 }
 
 /* **********************header************************ */
@@ -101,13 +102,11 @@ main{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
-  margin-left: auto;
 }
 .carre{
   border-radius: 5%;
-  width: 220px;
-  height: 200px;
+  width: 200px;
+  height: 180px;
   margin: 40px;
   border: 1px solid #154287;
   background: rgb(4,32,74);
@@ -127,4 +126,10 @@ footer{
   height: 150px;
   text-align: center;
 }
-
+#anime{
+ transition: 0.5s;
+}
+img{
+  width: 100px;
+  height: 100px;
+}
