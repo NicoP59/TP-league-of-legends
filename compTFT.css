@@ -5,6 +5,17 @@ html {
   padding: 0;
   background-color: #24253a;
 }
+/* **********************header************* */
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+}
+.logo img {
+  height: 70px;
+}
 
 /* *****************Nav hamburger********************** */
 h3 {
@@ -54,6 +65,7 @@ h3 {
   padding: 10px;
   background-color: #24253a;
   border-bottom: 2px solid #154287;
+  flex-wrap: wrap;
 }
 
 #btn {
@@ -67,6 +79,7 @@ h3 {
   font-size: 40px;
   color: black;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
@@ -91,15 +104,125 @@ h3 {
   transition: 0.5s;
 }
 
-/* image */
+/* ************************image************************** */
 
+#anime {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.compoTFT {
+  margin-top: 20px;
+  border: 1px solid #154287;
+  width: 80%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.TITRE {
+  width: 20%;
+  font-size: 1.5em;
+  text-align: center;
+}
 .Arcanist-Lux {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  border: 10px solid black;
+  border: 1px solid #154287;
+  align-items: center;
+  height: auto;
+  width: 80%;
+  margin-top: 20px;
+  background-image: linear-gradient(
+    to right,
+    #24253a,
+    #24253a,
+    #24253a,
+    #24253a,
+    #24253a,
+    #2b2f48,
+    #313956,
+    #374465,
+    #425d87,
+    #4879ab,
+    #4996cf,
+    #297197
+  );
 }
 
 .imgperso {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.image-perso {
+  height: 80px;
+  width: 80px;
+  margin-right: 20px;
+}
+
+.image-item {
+  height: 30px;
+  width: 25px;
+}
+
+/* *****************footer********************** */
+footer {
+  height: 20vh;
+  background-color: #24253a;
+  border-top: 1px solid #154287;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 50px;
   justify-content: space-around;
+}
+
+.bigContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.followUs {
+  text-align: center;
+  width: 50%;
+  height: auto;
+}
+.imglogos {
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.imgFacebook {
+  position: relative;
+  left: -6px;
+}
+
+.imgTwitter {
+  position: relative;
+  left: -4px;
+}
+
+.imglogos:hover {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+}
+
+/* ***********************responsive************************ */
+
+@media screen and (max-width: 750px) {
+  .Arcanist-Lux {
+    flex-direction: column;
+  }
 }
