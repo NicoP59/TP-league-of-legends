@@ -1,14 +1,10 @@
 body,
 html {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #24253a;
-    color: white;
-    overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #24253a;
 }
-
-/* **********************header************************ */
 
 /* *****************Nav hamburger********************** */
 h3 {
@@ -90,46 +86,20 @@ h3 {
   width: 80px;
   border-top: 1px solid #24253a;
 }
-/* main de la page */
-h1{
-  text-align: center;
+
+#anime {
+  transition: 0.5s;
 }
-main{
-  flex-direction: column;
-  
-}
-.container{
+
+/* image */
+
+.Arcanist-Lux {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  border: 10px solid black;
 }
-.carre{
-  border-radius: 5%;
-  width: 200px;
-  height: 180px;
-  margin: 40px;
-  border: 1px solid #154287;
-  background: rgb(4,32,74);
-  background: linear-gradient(90deg, rgba(4,32,74,1) 0%, rgba(4,32,74,0.7763306005996149) 100%); 
-  text-align: center;
-}
-img{
-  margin-top: 30px;
-}
-.partie1{
+
+.imgperso {
   display: flex;
-  flex-wrap: wrap;
-}
-/*Footer*/
-footer{
-  border: 1px solid #154287;
-  height: 150px;
-  text-align: center;
-}
-#anime{
- transition: 0.5s;
-}
-img{
-  width: 100px;
-  height: 100px;
+  justify-content: space-around;
 }
