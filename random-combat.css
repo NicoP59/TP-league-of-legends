@@ -103,3 +103,98 @@ h3 {
 #anime {
   transition: 0.5s;
 }
+
+/* *******************btn************************************** */
+
+#anime {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#btncombat {
+  background-color: red;
+  font-size: 5em;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+#photo-random {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin-top: 100px;
+}
+
+.img1 {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.img1 img {
+  height: 200px;
+}
+
+.img1 input {
+  background-color: red;
+  font-size: 5em;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+#perso-random {
+  background-color: red;
+  font-size: 5em;
+}
+
+/* ******************footer******************* */
+
+/* footer {
+  height: 20vh;
+  background-color: #24253a;
+  border-top: 1px solid #154287;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
+.bigContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.followUs {
+  text-align: center;
+  width: 50%;
+  height: auto;
+}
+.imglogos {
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.imgFacebook {
+  position: relative;
+  left: -6px;
+}
+
+.imgTwitter {
+  position: relative;
+  left: -4px;
+}
+
+.imglogos:hover {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+} */
