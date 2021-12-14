@@ -114,7 +114,8 @@ main{
   text-align: center;
 }
 img{
-  margin-top: 30px;
+  
+  
 }
 .partie1{
   display: flex;
@@ -136,11 +137,63 @@ img{
 .fenetre{
   visibility: hidden;
   position: fixed;
-  background-color: red;
-  
+  background-image: url(img/Jhincard.png) ;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+  top: 200px;
 }
 .active1{
   visibility: visible;
   opacity: 1;
   z-index: 9999;
+#roles{
+  height: 50px;
+  width: 50px;
+  
+  
+}
+.contenant{
+  background: rgb(4,32,74);
+  background: linear-gradient(90deg, rgba(4,32,74,0.8183474073223039) 16%, rgba(4,32,74,1) 100%); 
+  width: 350px;
+  height: 350px;
+  border-radius: 5%;
+}
+.centre{
+  margin-top: -30px;
+  text-align: center;
+  line-height: 15px;
+}
+
+#back{
+  position: relative;
+  top: -30px;
+  width: 100%;
+  height: 150px;
+  
+}
+.partie3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.div{
+  border-radius: 5%;
+  background-color: red;
+  border: 2px solid #43B4F3;
+  
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.soustitre{
+  display: flex;
+  margin: 5px;
+}
+.division{
+  flex-direction: column;
 }
