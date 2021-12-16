@@ -1,0 +1,95 @@
+html, body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #24253a;
+    color: white;
+}
+.conteneur{
+    margin: auto;
+    margin-top: 30px;
+    height: 250px;
+    width: 80%;
+    background-image: linear-gradient(
+        to right,
+        #40b561,
+        #009a84,
+        #007b93,
+        #005988,
+        #193765
+    );
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.details{
+    flex-direction: column;
+    margin-right: 20px;
+}
+#position{
+    width: 80px;
+    height: 80px;
+    margin-right: 30px;
+}
+#champion{
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+}
+#taille2{
+    width: 42px;
+    height: 42px;
+}
+.conteneur2{
+    flex-direction: column;   
+    margin-right: 20px;
+}
+#taille{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+.conteneur3{
+    margin-right: 20px;
+}
+.carre{
+    flex-direction: column;
+}
+.conteneur4{
+    display: flex;
+    margin-right: 20px;
+}
+.composition{
+    display: flex;
+}
+.partie{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+#compo{
+    height: 40px;
+    width: 40px;
+    margin: 2px;
+}
+.conteneurp2{
+    margin: auto;
+    margin-top: 30px;
+    height: 250px;
+    width: 80%;
+    background-image: linear-gradient(
+    to right,
+    #e03033,
+    #c4195f,
+    #912d79,
+    #54387a,
+    #193765
+    );
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
