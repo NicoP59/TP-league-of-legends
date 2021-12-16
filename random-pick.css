@@ -107,6 +107,20 @@ h4 {
   transition: 0.5s;
 }
 
+#logo {
+  margin-left: 20px;
+}
+/*anim logo*/
+#logo:hover {
+  animation: turn 2.5s;
+}
+
+@keyframes turn {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
 /* ************main****************** */
 #anime {
   display: flex;
