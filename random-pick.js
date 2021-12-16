@@ -64,14 +64,14 @@ const itemsList = [
     src: "./img/item/randuin.png",
   },
   {
-    src: "./img/item/rappel-mortel.png",
+    src: "./img/item/cote-epineuse.png",
   },
 ];
 
 // Vise le bouton où faire ton clic
 const btnPerso = document.getElementById("btn_perso");
 
-// Évènement au click sur tel bouton
+// Évènement au click sur  bouton perso
 btnPerso.addEventListener("click", function () {
   // Prend un élément random du tableau
   const randomID =
@@ -83,7 +83,9 @@ btnPerso.addEventListener("click", function () {
 
   // Ajoute son image
   const imgPerso = document.querySelector(".Img-perso");
+  imgPerso.innerHTML = "";
   const createImg = document.createElement("img");
+  createImg.innerHTML = "";
   createImg.classList.add("imgChampion");
   createImg.alt = "img";
   createImg.src = randomID.src;
@@ -93,16 +95,22 @@ btnPerso.addEventListener("click", function () {
 // Vise le bouton où faire ton clic
 const btnItem = document.getElementById("btn_items");
 
-// Évènement au click sur tel bouton
+// Évènement au click sur  bouton items
 btnItem.addEventListener("click", function () {
   // Prend un élèment random du tableau
-  const randomID = itemsList[Math.floor(Math.random() * itemsList.length)];
 
   // Ajoute un item dans sa div
   const imgItem = document.querySelector(".petit-iteme");
-  const createImg = document.createElement("img");
-  createImg.classList.add("imgItem");
-  createImg.alt = "img";
-  createImg.src = randomID.src;
-  imgItem.appendChild(createImg);
+  imgItem.innerHTML = "";
+  // createImg.innerHTML = "";
+  // boucle for
+  for (let i = 0; i < 5; i++) {
+    var randomID = itemsList[Math.floor(Math.random() * itemsList.length)];
+    var createImg = document.createElement("img");
+    createImg.classList.add("imgItem");
+    createImg.alt = "img";
+    createImg.src = randomID.src;
+    imgItem.appendChild(createImg);
+  }
+  // boucle for fin
 });

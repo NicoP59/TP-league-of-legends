@@ -175,7 +175,7 @@ p {
   justify-content: center;
 }
 .item1 {
-  width: 300px;
+  width: 500px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
