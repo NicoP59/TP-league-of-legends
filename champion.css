@@ -9,7 +9,18 @@ html {
 }
 
 /* **********************header************************ */
+/*anim logo*/
+#logo:hover{
+  animation: turn 2.5s;
 
+}
+#logo{
+  margin-left: 20px;
+}
+
+@keyframes turn {
+  100%{transform: rotate(180deg);}
+}
 /* *****************Nav hamburger********************** */
 h3 {
   font-size: 0.5em;
@@ -113,8 +124,8 @@ main{
   background: linear-gradient(90deg, rgba(4,32,74,1) 0%, rgba(4,32,74,0.7763306005996149) 100%); 
   text-align: center;
 }
-img{
-  
+#ecart{
+  margin-top: 30px;
   
 }
 .partie1{
@@ -137,17 +148,19 @@ img{
 .fenetre{
   visibility: hidden;
   position: fixed;
-  background-image: url(img/Jhincard.png) ;
-  background-repeat: no-repeat;
+  background: rgb(4,32,74);
+  background: linear-gradient(90deg, rgba(4,32,74,0.8183474073223039) 16%, rgba(4,32,74,1) 100%); 
+  width: 350px;
+  height: 350px;
+  border-radius: 5%;
   flex-direction: column;
-  height: 500px;
-  width: 500px;
   top: 200px;
 }
 .active1{
   visibility: visible;
   opacity: 1;
   z-index: 9999;
+}
 #roles{
   height: 50px;
   width: 50px;
@@ -182,9 +195,7 @@ img{
 }
 .div{
   border-radius: 5%;
-  background-color: red;
   border: 2px solid #43B4F3;
-  
   width: 30px;
   height: 30px;
   margin: 5px;
