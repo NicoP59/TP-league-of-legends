@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Avis.css" />
+    <title>Avis</title>
+  </head>
+  <body>
+    <div class="content-btn-ham">
+      <div id="btn">
+        <span class="iconify" data-icon="ci:hamburger"></span>
+      </div>
+      <div class="logo">
+        <img id="logo" src="img/rito.png" alt="" />
+        <input type="text" id="inputlogo" />
+      </div>
+    </div>
+    <header>
+      <div id="nav">
+        <li><h3>Partit LoL</h3></li>
+        <li><a class="link" href="champion.html">Champion</a></li>
+        <li><a class="link" href="#">Classement</a></li>
+        <li><a class="link" href="random-pick.html">Random pick</a></li>
+        <li><a class="link" href="random-combat.html">Random combat</a></li>
+        <li><h3>Partit TFT</h3></li>
+        <li><a class="link" href="#">Classement</a></li>
+        <li><a class="link" href="compoTFT.html">Composition</a></li>
+        <li><a class="link" href="profilTFT.html">Profil</a></li>
+        <li class="trait"></li>
+        <li><a class="link" href="Avis.html">Avis</a></li>
+      </div>
+    </header>
+
+    <main id="anime">
+      <div class="titre">
+        <h1>Avis</h1>
+
+        <p>Laissez votre avis sur notre site afin d’amélioré l’utilisation.</p>
+      </div>
+
+      <form action="#" method="post" id="contact_form">
+        <div class="name">
+          <label for="name"></label>
+          <input
+            type="text"
+            placeholder="Name"
+            name="name"
+            id="name_input"
+            required
+          />
+        </div>
+        <div class="email">
+          <label for="email"></label>
+          <input
+            type="email"
+            placeholder="Mail"
+            name="email"
+            id="email_input"
+            required
+          />
+        </div>
+        <div class="telephone">
+          <label for="name"></label>
+          <input
+            type="text"
+            placeholder="Téléphone"
+            name="telephone"
+            id="telephone_input"
+            required
+          />
+        </div>
+
+        <div class="message">
+          <label for="message"></label>
+          <textarea
+            name="message"
+            placeholder="COMMENTAIRE"
+            id="message_input"
+            cols="30"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <div class="submit">
+          <input type="submit" value="Envoyer Message" id="form_button" />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div class="bigContainer">
+        <div class="followUs">
+          <p class="titleFollowUs">Copyright</p>
+          <div class="logosContainer">
+            <img src="img/logo/facebooklogo.png" class="imglogos imgFacebook" />
+            <img src="img/logo/twitterlogo.png" class="imglogos imgTwitter" />
+            <img
+              src="img/logo/instagramlogo.png"
+              class="imglogos imgInstagram"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="nav.js"></script>
+    <script src="Avis.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+  </body>
+</html>
