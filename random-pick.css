@@ -314,3 +314,17 @@ footer {
 h2 {
   color: white;
 }
+
+/* ******************responsive******************* */
+
+@media screen and (max-width: 980px) {
+  .item1 {
+    border-right: none;
+  }
+  #RandomPick {
+    width: auto;
+  }
+  #btn_items {
+    margin-bottom: 10px;
+  }
+}

@@ -158,7 +158,8 @@ p {
   padding: 50px;
 }
 
-#RandomPick {
+#RandomPick,
+#RandomPick1 {
   display: flex;
   flex-wrap: wrap;
   border: 1px solid #154287;
@@ -193,7 +194,8 @@ p {
   align-items: center;
   border-right: 2px solid #154287;
 }
-.petit-iteme {
+.petit-iteme,
+.petit-iteme1 {
   width: 60px;
   height: 60px;
   margin: 15px;
@@ -213,14 +215,16 @@ p {
   flex-direction: column;
 }
 
-.Img-perso {
+.Img-perso,
+.Img-perso1 {
   margin-left: 20px;
   width: 150px;
   height: 150px;
   border: 1px solid #154287;
 }
 
-.Nom {
+.Nom,
+.Nom1 {
   font-size: 2em;
   color: white;
   text-align: center;
@@ -233,7 +237,8 @@ p {
 }
 
 /* *************boutton************* */
-.big-button {
+.big-button,
+.big-button1 {
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
@@ -257,8 +262,34 @@ p {
   );
   color: white;
   cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#btn_items1,
+#btn_perso1 {
+  font-size: 1.5em;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #154287;
+  background-image: linear-gradient(
+    to right,
+    #04204a,
+    #092652,
+    #0e2c59,
+    #123261,
+    #173869
+  );
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 input:hover {
   -webkit-box-shadow: 5px 5px 15px 5px #000000;
   box-shadow: 5px 5px 15px 5px #000000;
+}
+
+@media screen and (max-width: 1100px) {
+  #anime {
+    flex-direction: column;
+  }
 }

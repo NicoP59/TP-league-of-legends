@@ -6,15 +6,16 @@ html {
   background-color: #24253a;
 }
 /*anim logo*/
-#logo:hover{
+#logo:hover {
   animation: turn 2.5s;
-
 }
-#logo{
+#logo {
   margin-left: 20px;
 }
 @keyframes turn {
-  100%{transform: rotate(180deg);}
+  100% {
+    transform: rotate(180deg);
+  }
 }
 /* **********************header************* */
 .logo {
@@ -311,5 +312,38 @@ footer {
 @media screen and (max-width: 450px) {
   .IMAGE {
     flex-direction: column;
+  }
+  .diams {
+    width: 300px;
+  }
+
+  .imgperso {
+    width: auto;
+  }
+
+  .Arcanist-Lux,
+  .Arcanist-Lux1,
+  .Arcanist-Lux2 {
+    margin-right: 1px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .IMAGE {
+    flex-direction: column;
+    margin-right: 0%;
+  }
+  .diams {
+    width: 300px;
+  }
+
+  .imgperso {
+    width: auto;
+  }
+
+  .Arcanist-Lux,
+  .Arcanist-Lux1,
+  .Arcanist-Lux2 {
+    margin-right: 1px;
   }
 }
