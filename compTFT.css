@@ -107,16 +107,17 @@ h4 {
   transition: 0.5s;
 }
 /*anim logo*/
-#logo:hover{
+#logo:hover {
   animation: turn 2.5s;
-
 }
-#logo{
+#logo {
   margin-left: 20px;
 }
 
 @keyframes turn {
-  100%{transform: rotate(180deg);}
+  100% {
+    transform: rotate(180deg);
+  }
 }
 
 /* ************************image************************** */
@@ -135,6 +136,7 @@ h4 {
   width: 80%;
   margin-top: 100px;
   margin-bottom: 50px;
+  background-image: url("/img/bg-meta.jpg");
 }
 
 .TITRE {

@@ -164,3 +164,5 @@ btnItems.addEventListener("click", function () {
   }
   // boucle for fin
 });
+
+// COMBAT
