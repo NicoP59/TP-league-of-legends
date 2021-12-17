@@ -13,6 +13,14 @@ html, body{
   }
   #logo{
     margin-left: 20px;
+    height: 70px;
+  }
+  .logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
   }
   
   @keyframes turn {
@@ -100,8 +108,31 @@ html, body{
     width: 80px;
     border-top: 1px solid #24253a;
   }
+  .informations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  #pp{
+    width: 150px;
+  }
+  .info{
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .contenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #154287;
+    border-radius: 10Px;
+    width: 220px;
+  }
 .conteneur{
-    border: 1px solid #154287;
+    border: 2px solid #154287;
+    border-radius: 10px;
     margin: auto;
     margin-top: 30px;
     height: 250px;
@@ -155,11 +186,14 @@ html, body{
 .conteneur4{
     display: flex;
     margin-right: 20px;
+    flex-wrap: wrap;
 }
 .composition{
     display: flex;
+    flex-wrap: wrap;
 }
 .partie{
+  flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     margin-right: 40px;
@@ -171,9 +205,12 @@ html, body{
     margin: 2px;
 }
 .conteneurp2{
+  border: 2px solid #154287;
+  border-radius: 10px;
     margin: auto;
     margin-top: 30px;
     height: 250px;
+    margin-bottom: 30px;
     width: 80%;
     background-image: linear-gradient(
     to right,
@@ -193,5 +230,26 @@ footer{
     border: 1px solid #154287;
     height: 150px;
     text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    .conteneur{
+      height: auto;
+    }
+    .conteneurp2{
+      height: auto;
+      margin-bottom: 30px;
+    }
+    .logo{
+      display: none;
+    }
+
+  }
+  @media screen and (max-width: 1170px) {
+    .conteneur{
+      height: auto;
+    }
+    .conteneurp2{
+      height: auto;
+    }
   }
 
