@@ -104,9 +104,20 @@ h3 {
   width: 80px;
   border-top: 1px solid #24253a;
 }
+.ritoanim{
+  animation: myAnim 2s ease 0s infinite normal forwards;
+  transform: rotate(180deg);
+}
+@keyframes myAnim {
+  0% {
+    opacity: 1;
+  }
 
-#search{
-    width: 150px;
-    height: 50px;
-    opacity: 20%;
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
