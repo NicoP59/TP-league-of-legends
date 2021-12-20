@@ -130,5 +130,82 @@ h3 {
 }
 
 .coloors{
+    
     filter: invert(70%);
+}
+
+main {
+
+    color: white;
+
+}
+
+.content-titre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+/* *******footer*************** */
+footer {
+    height: 20vh;
+    background-color: #24253a;
+    border-top: 1px solid #154287;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.bigContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.followUs {
+    text-align: center;
+    width: 50%;
+    height: auto;
+}
+.imglogos {
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.imgFacebook {
+    position: relative;
+    left: -6px;
+}
+
+.imgTwitter {
+    position: relative;
+    left: -4px;
+}
+
+.imglogos:hover {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+
+/* *************************media*************** */
+
+@media screen and (max-width: 600px) {
+    .Gros {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-2 {
+        border-top: 1px solid #154287;
+        border-left: none;
+        margin-bottom: 50px;
+    }
+
+    .section-1 {
+        margin-bottom: 50px;
+    }
 }

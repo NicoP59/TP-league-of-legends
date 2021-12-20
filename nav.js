@@ -22,7 +22,7 @@ function affichageNav() {
     nav.style.opacity = "1";
     nav.style.zIndex = "9998";
     nav.style.width = "15vw";
-    header.style.width = "15vw";
+    // header.style.width = "15vw";
     main.style.width = "90vw"
     main.style.width = "85vw"
     main.style.marginLeft = "auto"
