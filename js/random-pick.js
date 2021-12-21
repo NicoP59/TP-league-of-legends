@@ -2,28 +2,28 @@
 
 const challengersList = [
   {
-    name: "Akali",
-    src: "./img/champion/Akali.jpg",
+    name: "Jhin",
+    src: "/img/champion/Jhin.png",
   },
   {
-    name: "Kaisa",
-    src: "./img/champion/Kaisa.png",
+    name: "Blitzcrank",
+    src: "/img/champion/Blitzcrank.png",
   },
   {
     name: "Lux",
-    src: "./img/champion/Lux.png",
+    src: "/img/champion/Lux.png",
   },
   {
     name: "Sion",
-    src: "./img/champion/Sion.png",
+    src: "/img/champion/Sion.png",
   },
   {
     name: "Urgot",
-    src: "./img/champion/Urgot.png",
+    src: "/img/champion/Urgot.png",
   },
   {
     name: "Vex",
-    src: "./img/champion/Vex.png",
+    src: "/img/champion/Vex.png",
   },
 ];
 
@@ -31,40 +31,40 @@ const challengersList = [
 
 const itemsList = [
   {
-    src: "./img/item/ange-gardien.png",
+    src: "/img/item/ange-gardien.png",
   },
   {
-    src: "./img/item/appoche-hiver.png",
+    src: "/img/item/appoche-hiver.png",
   },
   {
-    src: "./img/item/arc.png",
+    src: "/img/item/arc.png",
   },
   {
-    src: "./img/item/armure.png",
+    src: "/img/item/armure.png",
   },
   {
-    src: "./img/item/bt.png",
+    src: "/img/item/bt.png",
   },
   {
-    src: "./img/item/ceinture.png",
+    src: "/img/item/ceinture.png",
   },
   {
-    src: "./img/item/fleet.png",
+    src: "/img/item/fleet.png",
   },
   {
-    src: "./img/item/gant.png",
+    src: "/img/item/gant.png",
   },
   {
-    src: "./img/item/litro.png",
+    src: "/img/item/litro.png",
   },
   {
-    src: "./img/item/pisto.png",
+    src: "/img/item/pisto.png",
   },
   {
-    src: "./img/item/randuin.png",
+    src: "/img/item/randuin.png",
   },
   {
-    src: "./img/item/cote-epineuse.png",
+    src: "/img/item/cote-epineuse.png",
   },
 ];
 

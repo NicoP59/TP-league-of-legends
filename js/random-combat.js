@@ -3,27 +3,27 @@
 const challengersList = [
   {
     name: "Jhin",
-    src: "./img/champion/Jhin.png",
+    src: "/img/champion/Jhin.png",
   },
   {
     name: "Kaisa",
-    src: "./img/champion/Kaisa.png",
+    src: "/img/champion/Kaisa.png",
   },
   {
     name: "Lux",
-    src: "./img/champion/Lux.png",
+    src: "/img/champion/Lux.png",
   },
   {
     name: "Sion",
-    src: "./img/champion/Sion.png",
+    src: "/img/champion/Sion.png",
   },
   {
     name: "Urgot",
-    src: "./img/champion/Urgot.png",
+    src: "/img/champion/Urgot.png",
   },
   {
     name: "Vex",
-    src: "./img/champion/Vex.png",
+    src: "/img/champion/Vex.png",
   },
 ];
 
@@ -31,40 +31,40 @@ const challengersList = [
 
 const itemsList = [
   {
-    src: "./img/item/ange-gardien.png",
+    src: "/img/item/ange-gardien.png",
   },
   {
-    src: "./img/item/appoche-hiver.png",
+    src: "/img/item/appoche-hiver.png",
   },
   {
-    src: "./img/item/arc.png",
+    src: "/img/item/arc.png",
   },
   {
-    src: "./img/item/armure.png",
+    src: "/img/item/armure.png",
   },
   {
-    src: "./img/item/bt.png",
+    src: "/img/item/bt.png",
   },
   {
-    src: "./img/item/ceinture.png",
+    src: "/img/item/ceinture.png",
   },
   {
-    src: "./img/item/fleet.png",
+    src: "/img/item/fleet.png",
   },
   {
-    src: "./img/item/gant.png",
+    src: "/img/item/gant.png",
   },
   {
-    src: "./img/item/litro.png",
+    src: "/img/item/litro.png",
   },
   {
-    src: "./img/item/pisto.png",
+    src: "/img/item/pisto.png",
   },
   {
-    src: "./img/item/randuin.png",
+    src: "/img/item/randuin.png",
   },
   {
-    src: "./img/item/cote-epineuse.png",
+    src: "/img/item/cote-epineuse.png",
   },
 ];
 // perso1
@@ -167,129 +167,129 @@ btnItems.addEventListener("click", function () {
 
 // COMBAT
 
-const btnCombat = document
-  .getElementById("btn_combat")
-  .addEventListener("click", combat);
+// const btnCombat = document
+//   .getElementById("btn_combat")
+//   .addEventListener("click", combat);
 
-let perso1 = ["Jhin", 250, 27, 22, 32, 0];
+// let perso1 = ["Jhin", 250, 27, 22, 32, 0];
 
-let perso2 = ["Kaisa", 240, 40, 22, 10, 0];
+// let perso2 = ["Kaisa", 240, 40, 22, 10, 0];
 
-let perso3 = ["Lux", 300, 25, 15, 10, 0];
+// let perso3 = ["Lux", 300, 25, 15, 10, 0];
 
-let perso4 = ["Sion", 200, 50, 34, 14, 0];
+// let perso4 = ["Sion", 200, 50, 34, 14, 0];
 
-let perso5 = ["Urgot", 250, 45, 20, 15, 0];
+// let perso5 = ["Urgot", 250, 45, 20, 15, 0];
 
-let perso6 = ["Vex", 300, 30, 20, 15, 0];
+// let perso6 = ["Vex", 300, 30, 20, 15, 0];
 
-function combat() {
-  let viep1 = perso1[1];
-  let viep2 = perso2[1];
-  let viep3 = perso3[1];
-  let viep4 = perso4[1];
-  let viep5 = perso5[1];
-  let viep6 = perso6[1];
-  let victoire = 0;
+// function combat() {
+//   let viep1 = perso1[1];
+//   let viep2 = perso2[1];
+//   let viep3 = perso3[1];
+//   let viep4 = perso4[1];
+//   let viep5 = perso5[1];
+//   let viep6 = perso6[1];
+//   let victoire = 0;
 
-  while (victoire == 0) {
-    if (viep2 <= 0 && viep3 <= 0 && viep4 <= 0 && viep5 <= 0 && viep6 <= 0) {
-      console.log(perso1[0], "win");
-      victoire = 1;
-    // } else if (
-    //   viep1 <= 0 &&
-    //   viep3 <= 0 &&
-    //   viep4 <= 0 &&
-    //   viep5 <= 0 &&
-    //   viep6 <= 0
-    // ) {
-    //   console.log(perso2[0], "win");
-    //   victoire = 1;
-    // } else if (
-    //   viep1 <= 0 &&
-    //   viep2 <= 0 &&
-    //   viep4 <= 0 &&
-    //   viep5 <= 0 &&
-    //   viep6 <= 0
-    // ) {
-    //   console.log(perso3[0], "win");
-    //   victoire = 1;
-    // } else if (
-    //   viep1 <= 0 &&
-    //   viep2 <= 0 &&
-    //   viep3 <= 0 &&
-    //   viep5 <= 0 &&
-    //   viep6 <= 0
-    // ) {
-    //   console.log(perso4[0], "win");
-    //   victoire = 1;
-    // } else if (
-    //   viep1 <= 0 &&
-    //   viep2 <= 0 &&
-    //   viep3 <= 0 &&
-    //   viep4 <= 0 &&
-    //   viep6 <= 0
-    // ) {
-    //   console.log(perso5[0], "win");
-    //   victoire = 1;
-    // } else if (
-    //   viep1 <= 0 &&
-    //   viep2 <= 0 &&
-    //   viep3 <= 0 &&
-    //   viep4 <= 0 &&
-    //   viep5 <= 0
-    // ) {
-    //   console.log(perso6[0], "win");
-    //   victoire = 1;
-    // } else {
-    //   let aléatoire = Math.floor(Math.random() * 3);
-    //   viep1 =
-    //     viep1 -
-    //     (perso2[aléatoire + 2] +
-    //       perso3[aléatoire + 2] +
-    //       perso4[aléatoire + 2] +
-    //       perso5[aléatoire + 2] +
-    //       perso6[aléatoire + 2]);
+//   while (victoire == 0) {
+//     if (viep2 <= 0 && viep3 <= 0 && viep4 <= 0 && viep5 <= 0 && viep6 <= 0) {
+//       console.log(perso1[0], "win");
+//       victoire = 1;
+//     // } else if (
+//     //   viep1 <= 0 &&
+//     //   viep3 <= 0 &&
+//     //   viep4 <= 0 &&
+//     //   viep5 <= 0 &&
+//     //   viep6 <= 0
+//     // ) {
+//     //   console.log(perso2[0], "win");
+//     //   victoire = 1;
+//     // } else if (
+//     //   viep1 <= 0 &&
+//     //   viep2 <= 0 &&
+//     //   viep4 <= 0 &&
+//     //   viep5 <= 0 &&
+//     //   viep6 <= 0
+//     // ) {
+//     //   console.log(perso3[0], "win");
+//     //   victoire = 1;
+//     // } else if (
+//     //   viep1 <= 0 &&
+//     //   viep2 <= 0 &&
+//     //   viep3 <= 0 &&
+//     //   viep5 <= 0 &&
+//     //   viep6 <= 0
+//     // ) {
+//     //   console.log(perso4[0], "win");
+//     //   victoire = 1;
+//     // } else if (
+//     //   viep1 <= 0 &&
+//     //   viep2 <= 0 &&
+//     //   viep3 <= 0 &&
+//     //   viep4 <= 0 &&
+//     //   viep6 <= 0
+//     // ) {
+//     //   console.log(perso5[0], "win");
+//     //   victoire = 1;
+//     // } else if (
+//     //   viep1 <= 0 &&
+//     //   viep2 <= 0 &&
+//     //   viep3 <= 0 &&
+//     //   viep4 <= 0 &&
+//     //   viep5 <= 0
+//     // ) {
+//     //   console.log(perso6[0], "win");
+//     //   victoire = 1;
+//     // } else {
+//     //   let aléatoire = Math.floor(Math.random() * 3);
+//     //   viep1 =
+//     //     viep1 -
+//     //     (perso2[aléatoire + 2] +
+//     //       perso3[aléatoire + 2] +
+//     //       perso4[aléatoire + 2] +
+//     //       perso5[aléatoire + 2] +
+//     //       perso6[aléatoire + 2]);
 
-    //   viep2 =
-    //     viep2 -
-    //     (perso1[aléatoire + 2] +
-    //       perso3[aléatoire + 2] +
-    //       perso4[aléatoire + 2] +
-    //       perso5[aléatoire + 2] +
-    //       perso6[aléatoire + 2]);
+//     //   viep2 =
+//     //     viep2 -
+//     //     (perso1[aléatoire + 2] +
+//     //       perso3[aléatoire + 2] +
+//     //       perso4[aléatoire + 2] +
+//     //       perso5[aléatoire + 2] +
+//     //       perso6[aléatoire + 2]);
 
-    //   viep3 =
-    //     viep3 -
-    //     (perso1[aléatoire + 2] +
-    //       perso2[aléatoire + 2] +
-    //       perso4[aléatoire + 2] +
-    //       perso5[aléatoire + 2] +
-    //       perso6[aléatoire + 2]);
+//     //   viep3 =
+//     //     viep3 -
+//     //     (perso1[aléatoire + 2] +
+//     //       perso2[aléatoire + 2] +
+//     //       perso4[aléatoire + 2] +
+//     //       perso5[aléatoire + 2] +
+//     //       perso6[aléatoire + 2]);
 
-    //   viep4 =
-    //     viep4 -
-    //     (perso1[aléatoire + 2] +
-    //       perso2[aléatoire + 2] +
-    //       perso3[aléatoire + 2] +
-    //       perso5[aléatoire + 2] +
-    //       perso6[aléatoire + 2]);
+//     //   viep4 =
+//     //     viep4 -
+//     //     (perso1[aléatoire + 2] +
+//     //       perso2[aléatoire + 2] +
+//     //       perso3[aléatoire + 2] +
+//     //       perso5[aléatoire + 2] +
+//     //       perso6[aléatoire + 2]);
 
-    //   viep5 =
-    //     viep5 -
-    //     (perso1[aléatoire + 2] +
-    //       perso2[aléatoire + 2] +
-    //       perso3[aléatoire + 2] +
-    //       perso4[aléatoire + 2] +
-    //       perso6[aléatoire + 2]);
+//     //   viep5 =
+//     //     viep5 -
+//     //     (perso1[aléatoire + 2] +
+//     //       perso2[aléatoire + 2] +
+//     //       perso3[aléatoire + 2] +
+//     //       perso4[aléatoire + 2] +
+//     //       perso6[aléatoire + 2]);
 
-    //   viep6 =
-    //     viep6 -
-    //     (perso1[aléatoire + 2] +
-    //       perso2[aléatoire + 2] +
-    //       perso3[aléatoire + 2] +
-    //       perso5[aléatoire + 2] +
-    //       perso5[aléatoire + 2]);
-    // }
-  }
-}
+//     //   viep6 =
+//     //     viep6 -
+//     //     (perso1[aléatoire + 2] +
+//     //       perso2[aléatoire + 2] +
+//     //       perso3[aléatoire + 2] +
+//     //       perso5[aléatoire + 2] +
+//     //       perso5[aléatoire + 2]);
+//     // }
+//   }
+// }
