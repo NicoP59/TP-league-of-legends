@@ -290,14 +290,15 @@ footer {
   height: auto;
   border: #154287 1px solid;
   text-align: center;
-  }
-  #taille{
+}
+#taille {
   width: 100px;
   height: 100px;
-  }
-  p{
+}
+p {
   font-size: 30px;
-  }
+  color: white;
+}
 
 /* *************************media*************** */
 

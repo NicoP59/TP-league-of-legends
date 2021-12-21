@@ -166,8 +166,15 @@ btnItems.addEventListener("click", function () {
 });
 
 // COMBAT
-let btn = document
-  .getElementById("btn_combat")
-  .addEventListener("click", combat);
+const btnCombat = document.getElementById("btn_combat");
 
-function combat() {}
+// Évènement au click sur  bouton Combat
+btnCombat.addEventListener("click", function (imgPerso, imgPersos) {
+  if (imgPerso > imgPersos) {
+    console.log("Héro 1 gagne !");
+  } else if (imgPerso === imgPersos) {
+    console.log("Match nul");
+  } else {
+    console.log("Héros 2 perd ! ");
+  }
+});
