@@ -133,7 +133,7 @@ h4 {
 .compoTFT {
   margin-top: 20px;
   border: 1px solid #154287;
-  width: 80%;
+  width: 60%;
   margin-top: 100px;
   margin-bottom: 50px;
   background-image: url("/img/bg-meta.jpg");
@@ -241,5 +241,14 @@ footer {
 @media screen and (max-width: 750px) {
   .Arcanist-Lux {
     flex-direction: column;
+  }
+  #nav {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #nav {
+    flex-wrap: nowrap;
   }
 }

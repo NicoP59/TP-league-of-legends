@@ -17,6 +17,15 @@ html {
 h3 {
   font-size: 0.5em;
 }
+h2 {
+  color: white;
+}
+h4 {
+  color: white;
+}
+h5 {
+  color: black;
+}
 .logo {
   display: flex;
   flex-wrap: wrap;
@@ -335,5 +344,14 @@ footer {
 
   .section-1 {
     margin-bottom: 50px;
+  }
+  #nav {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #nav {
+    flex-wrap: nowrap;
   }
 }

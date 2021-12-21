@@ -347,3 +347,15 @@ footer {
     margin-right: 1px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  #nav {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #nav {
+    font-size: 25px;
+  }
+}

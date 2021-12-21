@@ -27,6 +27,10 @@ html {
 p {
   color: white;
 }
+#inputlogo {
+  font-size: 1em;
+  padding: 0;
+}
 /* *****************Nav hamburger********************** */
 h3 {
   font-size: 0.5em;
@@ -316,5 +320,19 @@ footer {
   form {
     margin: 0;
     margin-left: 0;
+  }
+  #nav {
+    font-size: 25px;
+  }
+  #inputlogo {
+    font-size: 1em;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #nav {
+    flex-wrap: nowrap;
+    font-size: 20px;
   }
 }

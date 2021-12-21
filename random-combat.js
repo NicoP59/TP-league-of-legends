@@ -166,3 +166,8 @@ btnItems.addEventListener("click", function () {
 });
 
 // COMBAT
+let btn = document
+  .getElementById("btn_combat")
+  .addEventListener("click", combat);
+
+function combat() {}
