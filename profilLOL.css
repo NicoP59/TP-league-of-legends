@@ -225,12 +225,20 @@ html, body{
     align-items: center;
     justify-content: center;
 }
-/*Footer*/
-footer{
-    border: 1px solid #154287;
-    height: 150px;
-    text-align: center;
+/* *******footer*************** */
+footer {
+  height: auto;
+  border: #154287 1px solid;
+  text-align: center;
   }
+  #taille{
+  width: 100px;
+  height: 100px;
+  }
+  p{
+  font-size: 30px;
+  }
+  
   @media screen and (max-width: 768px) {
     .conteneur{
       height: auto;

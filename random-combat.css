@@ -309,6 +309,19 @@ input:hover {
   color: white;
   cursor: pointer;
 }
+/* *******footer*************** */
+footer {
+  height: auto;
+  border: #154287 1px solid;
+  text-align: center;
+  }
+  #taille{
+  width: 100px;
+  height: 100px;
+  }
+  p{
+  font-size: 30px;
+  }
 /* *************************responsive*************** */
 
 @media screen and (max-width: 1100px) {

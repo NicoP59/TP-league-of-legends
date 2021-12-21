@@ -287,47 +287,17 @@ main {
 
 /* *******footer*************** */
 footer {
-  height: 20vh;
-  background-color: #24253a;
-  border-top: 1px solid #154287;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.bigContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 10px;
-}
-
-.followUs {
-  text-align: center;
-  width: 50%;
   height: auto;
-}
-.imglogos {
-  width: 50px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.imgFacebook {
-  position: relative;
-  left: -6px;
-}
-
-.imgTwitter {
-  position: relative;
-  left: -4px;
-}
-
-.imglogos:hover {
-  opacity: 1;
-  -webkit-animation: flash 1.5s;
-  animation: flash 1.5s;
-}
+  border: #154287 1px solid;
+  text-align: center;
+  }
+  #taille{
+  width: 100px;
+  height: 100px;
+  }
+  p{
+  font-size: 30px;
+  }
 
 /* *************************media*************** */
 
