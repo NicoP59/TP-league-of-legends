@@ -1,7 +1,21 @@
 let nav = document.getElementById("nav");
 
 let btn = document.getElementById("btn");
-btn.addEventListener("click", affichageNav);
+btn.addEventListener("click", function (){
+
+
+  if(window.innerWidth < 801){
+
+    affichageNavres()
+
+
+  }else{
+
+    affichageNav()
+
+  }
+
+} );
 
 let header = document.getElementById("header")
 
@@ -11,7 +25,9 @@ let main = document.getElementById("anime")
 
 links.forEach((link) => {
   console.log(link);
-  link.addEventListener("click", affichageNav);
+  link.addEventListener("click", affichageNavres, affichageNav );
+  
+  
 });
 
 function affichageNav() {
@@ -27,7 +43,25 @@ function affichageNav() {
     main.style.width = "85vw"
     main.style.marginLeft = "auto"
 
-  } else {
+
+  }else {
+    nav.style.visibility = "hidden";
+    nav.style.opacity = "0";
+    nav.style.zIndex = "-9998";
+    main.style.width = "99vw"
+  }
+}
+function affichageNavres(){
+  if ( nav.style.visibility == "hidden") {
+    nav.style.visibility = "visible";
+    nav.style.opacity = "1";
+    nav.style.zIndex = "9998";
+    nav.style.width = "100%";
+    main.style.width = "85vw"
+    main.style.marginLeft = "auto"
+
+
+  }else {
     nav.style.visibility = "hidden";
     nav.style.opacity = "0";
     nav.style.zIndex = "-9998";
@@ -35,4 +69,6 @@ function affichageNav() {
   }
 }
 
-affichageNav();
+
+affichageNavres();
+

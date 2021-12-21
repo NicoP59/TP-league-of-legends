@@ -108,7 +108,21 @@ h3 {
   opacity: 20%;
   height: 100%;
   width: 100%;
+  animation: Backs 5s ease 0s infinite normal forwards;
 }
+@keyframes Backs {
+  0% {
+    transform: scale(1) translate(0, 0);
+    transform-origin: 16% 84%;
+  }
+
+  100% {
+    transform: scale(1.25) translate(-20px, 15px);
+    transform-origin: left bottom;
+  }
+}
+
+
 #ritoanim{
   animation: myAnim 2s ease 0s infinite normal forwards;
   transform: rotate(180deg);
@@ -196,9 +210,26 @@ footer {
   #taille{
   width: 100px;
   height: 100px;
+  
   }
   p{
   font-size: 30px;
   }
+
+    a{
+      animation: myAnim 2s ease 0s infinite normal forwards;
+    }
+    @keyframes myAnim {
+      0%,
+      50%,
+      100% {
+        opacity: 1;
+      }
+    
+      25%,
+      75% {
+        opacity: 0;
+      }
+    }
 
 

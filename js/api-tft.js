@@ -1,5 +1,5 @@
 const Url =
-"https://euw1.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5?api_key=RGAPI-83a08047-e149-4ffb-94b7-3534c6bb91f6"
+"https://euw1.api.riotgames.com/tft/league/v1/challenger?api_key=RGAPI-83a08047-e149-4ffb-94b7-3534c6bb91f6"
 
 var data = []
 
@@ -53,17 +53,37 @@ function classement(){
                 if(tab[k] == all_div[l].dataset.point ){
 
                     var div_trier = document.createElement('div')
+                    div_trier.classList.add('rank')
                     document.getElementById("tableau_trier").appendChild(div_trier)
 
+                    var para2 = document.createElement("para2");
+                    para2.innerHTML = k + 1 
+                    para2.classList.add('para2')
+                    div_trier.appendChild(para2)
+
+                    var para3 = document.createElement("para3");
+                    para3.classList.add('para3')
+                    para3.innerHTML = all_div[l].innerHTML
+                    div_trier.appendChild(para3)
+                    
                     var img = document.createElement("img");
-                    img.src = "img/Ranks/challenger.svg";
-                    
-                    div_trier.innerHTML = k + 1 + all_div[l].innerHTML + all_div[l].dataset.point + "LP "
-                    
-                    div_trier.appendChild(img)
-                    
-                    div_trier.classList.add('rank')
+                    img.src = "img/Ranks/challenger.svg" + img.innerHTML;
                     img.classList.add('image-rank')
+                    div_trier.appendChild(img)
+
+                    var para4 = document.createElement("para4");
+                    para4.innerHTML = "Challenger"
+                    para4.classList.add('para4')
+                    div_trier.appendChild(para4)
+
+                    var para5 = document.createElement("para5");
+                    para5.innerHTML = all_div[l].dataset.point + " LP"
+                    div_trier.appendChild(para5)
+
+                    
+                    // div_trier.innerHTML = k + 1 + all_div[l].innerHTML + all_div[l].dataset.point + " LP"
+                    
+                    
                     
                 }
 

@@ -130,14 +130,16 @@ h3 {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: 50px;
-    padding: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+    
 }
 
 .image-rank {
 
     width: 25px;
+    margin-right: 20px;
 }
 
 .rank:nth-child(odd) {
@@ -145,29 +147,78 @@ h3 {
     background-color: #154287;
 }
 
-.rank:nth-child(1) {
-
-    font-size: 30px;
-    margin-bottom: 80px;
-    background: url(img/fond-akali.png) no-repeat;
-    background-size: cover;
-    height: 300px;
-}
-
-.rank:nth-child(1) .image-rank {
-    position: relative;
-    width: 100px;
-}
 
 .rank {
-
+    
     display: flex;
     color: white;
     width: 100%;
     border-radius: 10px;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
+
+.para2 {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 200px;
+}
+
+.para3 {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin-right: 270px;
+}
+
+.para4 {
+    color: rgb(255,215,0);
+    display: flex;
+    justify-content: center;
+    margin-right: 330px;
+}
+
+.rank:nth-child(1) {
+
+    font-size: 30px;
+    background: url(img/fond-akali.png) no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.rank:nth-child(1) .para2{
+
+    color: rgb(255,215,0);
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 200px;
+}
+
+.rank:nth-child(1) .para3{
+
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin-right: 230px;
+}
+
+.rank:nth-child(1) .para4{
+
+    color: rgb(255,215,0);
+    display: flex;
+    justify-content: center;
+    margin-right: 300px;
+}
+
+
+.rank:nth-child(1) .image-rank {
+    width: 100px;
+}
+
 
 
 
@@ -232,6 +283,63 @@ footer {
 
     .section-1 {
         margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .rank {
+        font-size: 16px;
+    }
+
+    .para2 {
+        width: 75px;
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    
+    .para3 {
+        width: 75px;
+        display: flex;
+        justify-content: center;
+        margin-right: 20px;
+    }
+    
+    .para4 {
+        display: none;
+    }
+
+    .rank:nth-child(1) {
+
+        font-size: 26px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .rank:nth-child(1) .para2{
+
+        color: rgb(255,215,0);
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .rank:nth-child(1) .para3{
+    
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+    }
+    
+    .rank:nth-child(1) .para4{
+    
+        display: none;
     }
 }
 
