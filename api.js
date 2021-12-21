@@ -1,5 +1,5 @@
 const Url =
-"https://euw1.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5?api_key=RGAPI-2a33328d-f46c-4ba0-833b-394b9e3d0347"
+"https://euw1.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5?api_key=RGAPI-83a08047-e149-4ffb-94b7-3534c6bb91f6"
 
 var data = []
 
@@ -55,9 +55,15 @@ function classement(){
                     var div_trier = document.createElement('div')
                     document.getElementById("tableau_trier").appendChild(div_trier)
 
-                    div_trier.innerHTML = k + 1 + " " + all_div[l].innerHTML + " " + all_div[l].dataset.point
-
+                    var img = document.createElement("img");
+                    img.src = "img/Ranks/challenger.svg";
+                    
+                    div_trier.innerHTML = k + 1 + all_div[l].innerHTML + all_div[l].dataset.point + "LP "
+                    
+                    div_trier.appendChild(img)
+                    
                     div_trier.classList.add('rank')
+                    img.classList.add('image-rank')
                     
                 }
 
@@ -66,9 +72,6 @@ function classement(){
         }
 
     }))
-
-    
-
 }
 
 classement()

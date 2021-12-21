@@ -1,0 +1,237 @@
+body,
+html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    background-color: #24253a;
+}
+
+/* *****************Nav hamburger********************** */
+#anime {
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+h3 {
+    font-size: 0.5em;
+}
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+}
+.logo img {
+    height: 70px;
+}
+
+#nav {
+  /* visibility: hidden; */
+    position: fixed;
+    opacity: 0;
+    z-index: -9998;
+    /* top: 0; */
+    left: 0;
+    background-color: #154287;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    transition: 0.5s;
+    height: 100%;
+}
+
+#nav li {
+    margin-top: 20px;
+}
+
+#nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.4em;
+
+    transition: 0.2s;
+    padding: 10px 20px;
+}
+
+#nav li a:hover {
+    background-color: white;
+    color: #24253a;
+}
+
+.content-btn-ham {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 10px;
+    /* width: 100%; */
+    background-color: #24253a;
+    border-bottom: 1px solid #154287;
+}
+
+#btn {
+    width: 60px;
+    height: 70px;
+    background-color: #24253a;
+    z-index: 9999;
+
+    border-radius: 10px;
+
+    font-size: 40px;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+#btn:hover {
+    background-color: rgb(56, 115, 175);
+}
+
+.trait {
+    width: 80px;
+    border-top: 1px solid #24253a;
+}
+
+#logo {
+    margin-left: 20px;
+}
+/*anim logo*/
+#logo:hover {
+    animation: turn 2.5s;
+}
+
+@keyframes turn {
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+
+/* ********** MAIN ************ */
+
+#tableau_trier {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px;
+    padding: 20px;
+}
+
+.image-rank {
+
+    width: 25px;
+}
+
+.rank:nth-child(odd) {
+
+    background-color: #154287;
+}
+
+.rank:nth-child(1) {
+
+    font-size: 30px;
+    margin-bottom: 80px;
+    background: url(img/fond-akali.png) no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.rank:nth-child(1) .image-rank {
+    position: relative;
+    width: 100px;
+}
+
+.rank {
+
+    display: flex;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+/* *******footer*************** */
+
+footer {
+    height: 20vh;
+    background-color: #24253a;
+    border-top: 1px solid #154287;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.bigContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.followUs {
+    text-align: center;
+    width: 50%;
+    height: auto;
+}
+.imglogos {
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.imgFacebook {
+    position: relative;
+    left: -6px;
+}
+
+.imgTwitter {
+    position: relative;
+    left: -4px;
+}
+
+.imglogos:hover {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+
+/* *************************media*************** */
+
+@media screen and (max-width: 600px) {
+    .Gros {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-2 {
+        border-top: 1px solid #154287;
+        border-left: none;
+        margin-bottom: 50px;
+    }
+
+    .section-1 {
+        margin-bottom: 50px;
+    }
+}
+
