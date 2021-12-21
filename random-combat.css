@@ -288,6 +288,42 @@ input:hover {
   box-shadow: 5px 5px 15px 5px #000000;
 }
 
+.btn-combat {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#btn_combat {
+  font-size: 1.5em;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #154287;
+  background-image: linear-gradient(
+    to right,
+    #04204a,
+    #092652,
+    #0e2c59,
+    #123261,
+    #173869
+  );
+  color: white;
+  cursor: pointer;
+}
+/* *******footer*************** */
+footer {
+  height: auto;
+  border: #154287 1px solid;
+  text-align: center;
+  }
+  #taille{
+  width: 100px;
+  height: 100px;
+  }
+  p{
+  font-size: 30px;
+  }
+/* *************************responsive*************** */
+
 @media screen and (max-width: 1100px) {
   #anime {
     flex-direction: column;

@@ -159,6 +159,34 @@ p {
   color: white;
   border-radius: 10px;
   padding: 50px;
+  animation: myAnim 2s ease 0s infinite normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
 }
 
 #RandomPick {
@@ -277,39 +305,19 @@ footer {
   justify-content: space-around;
 }
 
-.bigContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 10px;
-}
-
-.followUs {
-  text-align: center;
-  width: 50%;
+/* *******footer*************** */
+footer {
   height: auto;
-}
-.imglogos {
-  width: 50px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.imgFacebook {
-  position: relative;
-  left: -6px;
-}
-
-.imgTwitter {
-  position: relative;
-  left: -4px;
-}
-
-.imglogos:hover {
-  opacity: 1;
-  -webkit-animation: flash 1.5s;
-  animation: flash 1.5s;
-}
+  border: #154287 1px solid;
+  text-align: center;
+  }
+  #taille{
+  width: 100px;
+  height: 100px;
+  }
+  p{
+  font-size: 30px;
+  }
 
 h2 {
   color: white;
@@ -326,5 +334,11 @@ h2 {
   }
   #btn_items {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #nav {
+    flex-wrap: nowrap;
   }
 }

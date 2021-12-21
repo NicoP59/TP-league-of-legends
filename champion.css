@@ -198,9 +198,16 @@ img{
 .division{
   flex-direction: column;
 }
-/*Footer*/
-footer{
-  border: 1px solid #154287;
-  height: 150px;
+/* *******footer*************** */
+footer {
+  height: auto;
+  border: #154287 1px solid;
   text-align: center;
-}
+  }
+  #taille{
+  width: 100px;
+  height: 100px;
+  }
+  p{
+  font-size: 30px;
+  }
