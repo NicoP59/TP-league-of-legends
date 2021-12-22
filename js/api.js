@@ -1,6 +1,5 @@
 const Url =
-"https://euw1.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5?api_key=RGAPI-83a08047-e149-4ffb-94b7-3534c6bb91f6"
-
+"https://euw1.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5?api_key=RGAPI-9ff2ac8f-c1a7-4b8d-afac-7bcaed65b95e"
 var data = []
 
 var tab = []
@@ -30,27 +29,22 @@ function classement(){
             div.classList.add('test')
             div.style.display = "none"
 
-
         }
+
         var all_div = document.querySelectorAll(".test")
         
-        console.log(all_div)
-
         for( j = 0 ; j < all_div.length; j++){
             tab.push(all_div[j].dataset.point)
         }
 
         tab.sort((a, b) => a - b)
         tab.reverse()
-        console.log(tab)
-
-
 
         for( k = 0; k < tab.length; k++){
 
             for( l = 0 ; l < tab.length; l++){
 
-                if(tab[k] == all_div[l].dataset.point ){
+                if( tab[k] == all_div[l].dataset.point ){
 
                     var div_trier = document.createElement('div')
                     div_trier.classList.add('rank')
@@ -67,7 +61,7 @@ function classement(){
                     div_trier.appendChild(para3)
                     
                     var img = document.createElement("img");
-                    img.src = "img/Ranks/challenger.svg" + img.innerHTML;
+                    img.src = "../img/Ranks/challenger.svg" + img.innerHTML;
                     img.classList.add('image-rank')
                     div_trier.appendChild(img)
 
@@ -79,11 +73,6 @@ function classement(){
                     var para5 = document.createElement("para5");
                     para5.innerHTML = all_div[l].dataset.point + " LP"
                     div_trier.appendChild(para5)
-
-                    
-                    // div_trier.innerHTML = k + 1 + all_div[l].innerHTML + all_div[l].dataset.point + " LP"
-                    
-                    
                     
                 }
 

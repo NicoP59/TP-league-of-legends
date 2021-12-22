@@ -33,7 +33,7 @@ h4 {
   left: 0;
   background-color: #154287;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -195,14 +195,14 @@ footer {
   height: auto;
   border: #154287 1px solid;
   text-align: center;
-  }
-  #taille{
+}
+#taille {
   width: 100px;
   height: 100px;
-  }
-  p{
+}
+p {
   font-size: 30px;
-  }
+}
 
 /* ***********************responsive************************ */
 

@@ -67,7 +67,7 @@ function classement(){
                     div_trier.appendChild(para3)
                     
                     var img = document.createElement("img");
-                    img.src = "img/Ranks/challenger.svg" + img.innerHTML;
+                    img.src = "../img/Ranks/challenger.svg" + img.innerHTML;
                     img.classList.add('image-rank')
                     div_trier.appendChild(img)
 

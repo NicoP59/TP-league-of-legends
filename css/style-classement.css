@@ -183,7 +183,7 @@ h3 {
 .rank:nth-child(1) {
 
     font-size: 30px;
-    background: url(img/fond-akali.png) no-repeat;
+    background: url(../img/fond-akali.png) no-repeat;
     background-size: cover;
     height: 300px;
 }
